@@ -198,7 +198,7 @@ function getNextFridayThe13th(/* date */) {
  * Date(2024, 10, 10) => 4
  */
 function getQuarter(date) {
-  return Math.ceil(date.getMonth() / 3);
+  return Math.floor(date.getMonth() / 3 + 1);
 }
 
 /**
